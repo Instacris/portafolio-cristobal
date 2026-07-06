@@ -1,0 +1,47 @@
+/* ============================================================
+   VARIABLES · Sistema de diseño cyberpunk / pixel art
+   Paleta: negro + rojo, efectos blancos
+   ============================================================ */
+:root {
+  /* --- Fondos --- */
+  --bg:        #050507;
+  --bg-2:      #0a0a10;
+  --bg-3:      #0e0e16;
+  --panel:     rgba(14, 14, 22, 0.72);
+  --panel-solid: #0d0d14;
+  --grid-line: rgba(255, 0, 51, 0.06);
+
+  /* --- Rojo (acento principal) --- */
+  --red:        #ff0033;
+  --red-bright: #ff2d55;
+  --red-soft:   #ff5a78;
+  --red-deep:   #b3001b;
+  --red-glow:   rgba(255, 0, 51, 0.55);
+  --red-faint:  rgba(255, 0, 51, 0.14);
+
+  /* --- Blancos / texto --- */
+  --white:  #f3f4f8;
+  --ghost:  rgba(243, 244, 248, 0.62);
+  --ghost-2:rgba(243, 244, 248, 0.34);
+  --hack:   rgba(255, 255, 255, 0.85);   /* lluvia de hacking */
+
+  /* --- Acento glitch (uso mínimo) --- */
+  --cyan: #16f0ff;
+
+  /* --- Tipografías --- */
+  --font-pixel: 'Press Start 2P', monospace;
+  --font-mono:  'Share Tech Mono', monospace;
+  --font-term:  'VT323', monospace;
+
+  /* --- Métricas --- */
+  --notch: 10px;                 /* tamaño de esquina recortada (pixel) */
+  --maxw: 1180px;
+  --nav-h: 64px;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-snap: cubic-bezier(0.7, 0, 0.2, 1);
+
+  /* --- Sombras / glows --- */
+  --glow-sm: 0 0 6px var(--red-glow);
+  --glow-md: 0 0 14px var(--red-glow), 0 0 2px var(--red-bright);
+  --glow-lg: 0 0 28px var(--red-glow), 0 0 8px var(--red);
+}

@@ -1,0 +1,18 @@
+<svg viewBox="0 0 320 180" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">
+  <rect width="320" height="180" fill="#0b0b12"/>
+  <!-- barra de navegador -->
+  <rect x="0" y="0" width="320" height="22" fill="#14141e"/>
+  <rect x="8" y="8" width="6" height="6" fill="#ff0033"/>
+  <rect x="18" y="8" width="6" height="6" fill="#ff5a78"/>
+  <rect x="28" y="8" width="6" height="6" fill="#777"/>
+  <rect x="48" y="7" width="200" height="8" fill="#0a0a10"/>
+  <!-- contenido simulado -->
+  <rect x="16" y="38" width="120" height="14" fill="#ff0033" opacity="0.85"/>
+  <rect x="16" y="60" width="220" height="7" fill="#2b2b3a"/>
+  <rect x="16" y="74" width="190" height="7" fill="#22222e"/>
+  <rect x="16" y="96" width="80" height="26" fill="#ff0033" opacity="0.5"/>
+  <rect x="232" y="40" width="72" height="86" fill="#16161f"/>
+  <rect x="240" y="48" width="56" height="40" fill="#26000c"/>
+  <!-- texto placeholder -->
+  <text x="160" y="160" font-family="'Share Tech Mono',monospace" font-size="11" fill="#ff5a78" text-anchor="middle">[ captura pendiente ]</text>
+</svg>

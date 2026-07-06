@@ -1,0 +1,95 @@
+/* ============================================================
+   ANIMATIONS · keyframes, glitch, reveal al hacer scroll
+   ============================================================ */
+
+/* ---------- Keyframes base ---------- */
+@keyframes blink { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
+
+@keyframes bootfill { to { width: 100%; } }
+
+/* Parpadeo eléctrico del porcentaje mientras un anillo "carga" */
+@keyframes pct-flicker { 0%,100% { opacity: 1; } 50% { opacity: .55; } }
+/* Anillo de escaneo girando alrededor del medidor de lenguaje */
+@keyframes ring-spin { to { transform: rotate(360deg); } }
+@keyframes load-fill { from { width: 0; } to { width: 100%; } }
+
+/* Pantalla de acceso: parpadeo del aviso "entrar" */
+@keyframes enter-pulse { 0%,100% { opacity: 1; } 50% { opacity: .45; } }
+
+/* Laterales (rails) */
+@keyframes eq { 0%,100% { height: 15%; } 50% { height: 100%; } }
+@keyframes gauge { 0% { width: 20%; } 100% { width: 90%; } }
+
+/* Cursor: ping de clic */
+@keyframes cursor-ping {
+  0% { width: 8px; height: 8px; opacity: .9; }
+  100% { width: 46px; height: 46px; opacity: 0; }
+}
+
+@keyframes scanmove { 0% { top: -40%; } 100% { top: 110%; } }
+
+@keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+@keyframes pulse-glow {
+  0%,100% { box-shadow: 0 0 10px var(--red-glow); }
+  50%     { box-shadow: 0 0 22px var(--red-glow), 0 0 6px var(--red); }
+}
+
+/* Flotación suave del marco de la foto */
+.photo-wrap { animation: floaty 6s ease-in-out infinite; }
+
+/* ---------- Glitch de texto ---------- */
+.glitch { position: relative; display: inline-block; }
+.glitch::before, .glitch::after {
+  content: attr(data-text);
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  overflow: hidden; pointer-events: none;
+}
+.glitch::before { color: var(--cyan); z-index: -1; animation: glitch-1 2.6s infinite steps(2) alternate-reverse; }
+.glitch::after  { color: var(--red);  z-index: -2; animation: glitch-2 1.9s infinite steps(2) alternate-reverse; }
+
+@keyframes glitch-1 {
+  0% { clip-path: inset(20% 0 60% 0); transform: translate(-2px,-1px); }
+  20% { clip-path: inset(80% 0 5% 0); transform: translate(2px,1px); }
+  40% { clip-path: inset(40% 0 40% 0); transform: translate(-1px,2px); }
+  60% { clip-path: inset(10% 0 75% 0); transform: translate(2px,-2px); }
+  80% { clip-path: inset(65% 0 12% 0); transform: translate(-2px,1px); }
+  100% { clip-path: inset(30% 0 50% 0); transform: translate(1px,0); }
+}
+@keyframes glitch-2 {
+  0% { clip-path: inset(70% 0 10% 0); transform: translate(2px,1px); }
+  25% { clip-path: inset(15% 0 65% 0); transform: translate(-2px,-1px); }
+  50% { clip-path: inset(55% 0 25% 0); transform: translate(1px,2px); }
+  75% { clip-path: inset(35% 0 45% 0); transform: translate(-2px,1px); }
+  100% { clip-path: inset(5% 0 80% 0); transform: translate(2px,-1px); }
+}
+
+/* Glitch fuerte al pasar el mouse (en logo / títulos) */
+.glitch-hover:hover { animation: glitch-shake .3s steps(2) infinite; }
+@keyframes glitch-shake {
+  0% { transform: translate(0); }
+  25% { transform: translate(-2px,1px); text-shadow: 2px 0 var(--cyan), -2px 0 var(--red); }
+  50% { transform: translate(2px,-1px); text-shadow: -2px 0 var(--cyan), 2px 0 var(--red); }
+  75% { transform: translate(-1px,-1px); }
+  100% { transform: translate(0); }
+}
+
+/* ---------- Reveal al hacer scroll ---------- */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.reveal.in { opacity: 1; transform: none; }
+.reveal.d1 { transition-delay: .08s; }
+.reveal.d2 { transition-delay: .16s; }
+.reveal.d3 { transition-delay: .24s; }
+.reveal.d4 { transition-delay: .32s; }
+
+/* Aparición lateral */
+.reveal-l { opacity: 0; transform: translateX(-40px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.reveal-l.in { opacity: 1; transform: none; }
+.reveal-r { opacity: 0; transform: translateX(40px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.reveal-r.in { opacity: 1; transform: none; }
+
+/* Respeto a usuarios con reduce-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .1ms !important; }
+  .photo-wrap { animation: none; }
+}

@@ -1,0 +1,46 @@
+/* ============================================================
+   RESPONSIVE · tablet y teléfono
+   ============================================================ */
+
+/* ---- Laterales (rails): solo en pantallas anchas (PC) ---- */
+@media (min-width: 1360px) {
+  .rail { display: flex; }
+}
+
+/* ---- Tablet ---- */
+@media (max-width: 920px) {
+  .hero .wrap { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+  .hero-tag::before { content: "> "; }
+  .hero-cta, .hero-stats { justify-content: center; }
+  .hero-desc { margin-left: auto; margin-right: auto; }
+  .photo-wrap { order: -1; }
+  .skills-grid { grid-template-columns: 1fr; }
+}
+
+/* ---- Teléfono ---- */
+@media (max-width: 680px) {
+  :root { --notch: 8px; }
+
+  section { padding: 64px 0; }
+  .wrap { padding: 0 18px; }
+
+  .menu-toggle { top: 14px; left: 14px; width: 46px; height: 46px; }
+
+  .hero-stats { gap: 20px; }
+  .xp-card:hover { transform: none; }
+  .proj-grid { grid-template-columns: 1fr; }
+
+  /* Pantalla de acceso en móvil */
+  .intro-row { flex-direction: column; gap: 2px; }
+  .intro-row .k { flex-basis: auto; }
+  .intro-enter { font-size: 0.72rem; }
+
+  /* En móviles el cursor personalizado se desactiva (ver styles.css) */
+  body { cursor: auto; }
+}
+
+/* ---- Pantallas muy pequeñas ---- */
+@media (max-width: 380px) {
+  .lang-rings { grid-template-columns: repeat(2, 1fr); }
+  .hero h1 { font-size: 1.4rem; }
+}

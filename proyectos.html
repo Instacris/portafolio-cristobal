@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Proyectos / contrabandos realizados por Cristóbal — páginas web creadas, con vista previa y enlace en vivo." />
+  <title>Cristóbal · Contrabandos // PROYECTOS</title>
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ====== Capas de fondo ====== -->
+  <canvas id="matrix" class="rain" aria-hidden="true"></canvas>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- ====== Botón menú + drawer lateral izquierdo ====== -->
+  <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+    <span></span><span></span><span></span>
+  </button>
+
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-head">
+      <span class="drawer-mark">K</span>
+      <span class="drawer-title scramble sc-multi" data-text="MENU//SYS">MENU//SYS</span>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html#inicio"><i>01</i><span class="scramble sc-multi hov" data-text="Inicio">Inicio</span></a>
+      <a href="index.html#skills"><i>02</i><span class="scramble sc-multi hov" data-text="Skills">Skills</span></a>
+      <a href="index.html#experiencia"><i>03</i><span class="scramble sc-multi hov" data-text="Experiencia">Experiencia</span></a>
+      <a href="proyectos.html" class="here"><i>04</i><span class="scramble sc-multi hov" data-text="Contrabandos">Contrabandos</span></a>
+      <a href="index.html#contacto"><i>05</i><span class="scramble sc-multi hov" data-text="Contacto">Contacto</span></a>
+    </nav>
+    <div class="drawer-foot scramble sc-multi" data-text="SYSTEM ONLINE · v2.0">SYSTEM ONLINE · v2.0</div>
+  </aside>
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <!-- ====== Laterales decorativos (solo PC) ====== -->
+  <aside class="rail rail-l" aria-hidden="true">
+    <span class="rail-label">TELEMETRÍA // SYS</span>
+    <div class="rail-eq"><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="rail-stream" id="rail-stream"></div>
+    <div class="rail-rec"><b></b>REC</div>
+  </aside>
+  <aside class="rail rail-r" aria-hidden="true">
+    <span class="rail-label">PUNTERO // TRACE</span>
+    <canvas class="rail-scope" id="rail-scope"></canvas>
+    <div class="rail-coords" id="rail-coords">X:0000<br />Y:0000</div>
+    <div class="rail-gauge">
+      <div class="g"><span>SIG</span><i><b></b></i></div>
+      <div class="g"><span>ENC</span><i><b></b></i></div>
+    </div>
+  </aside>
+
+  <main>
+    <section id="contrabandos" class="proj-section">
+      <div class="wrap">
+        <a class="back-link" href="index.html"><span>◂</span> VOLVER AL PERFIL</a>
+        <span class="kicker scramble obs sc-multi" data-text="// BOTIN">// BOTIN</span>
+        <h1 class="section-title scramble obs sc-multi" data-text="CONTRABANDOS REALIZADOS">CONTRABANDOS REALIZADOS</h1>
+        <p class="section-sub scramble obs" data-text="Páginas web que he creado. Cada una con su vista previa y enlace en vivo.">Páginas web que he creado. Cada una con su vista previa y enlace en vivo.</p>
+
+        <div class="proj-grid" id="proj-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>© <span id="year"></span> <b>CRISTOBAL</b> // contrabandos entregados · <span style="color:var(--red)">v2.0 cyber</span></p>
+    </div>
+  </footer>
+
+  <!-- ====== Scripts ====== -->
+  <script src="js/data.js"></script>
+  <script src="js/scramble.js"></script>
+  <script src="js/proyectos.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/rails.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/cursor.js"></script>
+</body>
+</html>
