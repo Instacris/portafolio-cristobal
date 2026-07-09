@@ -127,6 +127,20 @@ const PROYECTOS = [
     link: "https://planetario-austral.vercel.app",
     tags: ["JavaScript", "Educación", "UI/UX"],
   },
+  {
+    name: "Ferretería EL GALPÓN",
+    desc: "Sitio catálogo para una ferretería y maquinaria: más de 190 productos con filtros por categoría, búsqueda y enfoque en precios mayoristas por volumen.",
+    img: "img/ferreteria.png",
+    link: "https://ferreteria-el-galpon.vercel.app",
+    tags: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    name: "ORIGEN · Tienda de Café",
+    desc: "Tienda online de café y máquinas con carrito, checkout que descuenta stock y panel de administración completo (productos, pedidos y ajustes).",
+    img: "img/origen.png",
+    link: "https://origen-cafe-eta.vercel.app",
+    tags: ["JavaScript", "E-commerce", "Admin"],
+  },
 ];
 
 /* --- Exponer en window para que main.js pueda leerlos ---
