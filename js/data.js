@@ -86,6 +86,20 @@ const CONTACTO = {
    link: URL real del proyecto (se abre en otra pestaña). --- */
 const PROYECTOS = [
   {
+    name: "Overdrive · Tienda de Cosplay",
+    desc: "Tienda temática (asesino de Scream) con DOS perfiles: vista de cliente (catálogo con ofertas y stock en tiempo real, selección de productos y contacto por WhatsApp) y panel administrativo para gestionar productos, precios, ofertas, stock y mensajes. Con base de datos real en la nube.",
+    img: "img/overdrive.png",
+    link: "https://overdrive-woad.vercel.app/demo",
+    tags: ["JavaScript", "API Serverless", "Redis", "Admin"],
+  },
+  {
+    name: "Pixel Restaurant · Arcade Bar",
+    desc: "Carta virtual con temática pixel art para un bar arcade: categorías, fichas de platos con ingredientes, animaciones y carrito de pedidos.",
+    img: "img/ArcadeBar.png",
+    link: "https://pixel-restaurant.vercel.app",
+    tags: ["React", "Vite", "Tailwind"],
+  },
+  {
     name: "Plantel · Gestión de Personal",
     desc: "App de RR.HH. para administrar personal: contratos, horarios y nómina. Con base de datos real (Neon Postgres), API serverless y autenticación JWT.",
     img: "img/gestorAdmin.png",
@@ -98,13 +112,6 @@ const PROYECTOS = [
     img: "img/GestorBodega.png",
     link: "https://bodega-gestion.vercel.app",
     tags: ["JavaScript", "Excel", "LocalStorage"],
-  },
-  {
-    name: "Pixel Restaurant · Arcade Bar",
-    desc: "Carta virtual con temática pixel art para un bar arcade: categorías, fichas de platos con ingredientes, animaciones y carrito de pedidos.",
-    img: "img/ArcadeBar.png",
-    link: "https://pixel-restaurant.vercel.app",
-    tags: ["React", "Vite", "Tailwind"],
   },
   {
     name: "Superpan · Amasandería",
