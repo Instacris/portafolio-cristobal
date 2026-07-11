@@ -15,6 +15,7 @@
   .hero-desc { margin-left: auto; margin-right: auto; }
   .photo-wrap { order: -1; }
   .skills-grid { grid-template-columns: 1fr; }
+  .panel-wide .excel-skills { grid-template-columns: 1fr; }
 }
 
 /* ---- Teléfono ---- */
@@ -27,6 +28,7 @@
   .menu-toggle { top: 14px; left: 14px; width: 46px; height: 46px; }
 
   .hero-stats { gap: 20px; }
+  .tool-tag { display: none; }
   .xp-card:hover { transform: none; }
   .proj-grid { grid-template-columns: 1fr; }
 

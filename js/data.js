@@ -29,6 +29,16 @@ const LENGUAJES = [
   { name: "SQL",        level: 75, icon: chip("DB", "#ff2d55") },
 ];
 
+/* --- HERRAMIENTAS DE TRABAJO (edita nombre / descripción / etiqueta) --- */
+const HERRAMIENTAS = [
+  { name: "VS Code",       desc: "Editor principal · terminal y debugging integrados", tag: "EDITOR",    icon: chip("VS", "#22a6f2") },
+  { name: "Git & GitHub",  desc: "Control de versiones · repos públicos y colaboración", tag: "VERSIONES", icon: chip("G", "#f4511e") },
+  { name: "Node.js",       desc: "Servidores, APIs y automatizaciones con npm", tag: "BACKEND",  icon: chip("N", "#6cc24a") },
+  { name: "Vercel",        desc: "Despliegue y hosting de todos mis proyectos", tag: "DEPLOY",   icon: chip("▲", "#f3f4f8") },
+  { name: "Bases de datos", desc: "Postgres (Neon) · Redis · modelado y consultas SQL", tag: "DATOS",   icon: chip("DB", "#b46bff") },
+  { name: "IA aplicada",   desc: "Asistentes de IA para acelerar desarrollo y pruebas", tag: "BOOST",    icon: chip("AI", "#19ff7a") },
+];
+
 /* --- EXCEL: habilidades concretas (lo que más piden en empresas) ---
    Edita esta lista con lo que realmente sabes hacer. --- */
 const EXCEL_SKILLS = [
@@ -77,7 +87,7 @@ const CONTACTO = {
   rol: "Desarrollador - Analista",
   email: "cristobal.chacon2003@gmail.com",
   ubicacion: "Chile",
-  github: "https://github.com/",
+  github: "https://github.com/Instacris",
   linkedin: "https://www.linkedin.com/",
 };
 
@@ -153,6 +163,7 @@ const PROYECTOS = [
 /* --- Exponer en window para que main.js pueda leerlos ---
    (const a nivel de script NO crea propiedades en window) --- */
 window.LENGUAJES = LENGUAJES;
+window.HERRAMIENTAS = HERRAMIENTAS;
 window.EXCEL_SKILLS = EXCEL_SKILLS;
 window.EXPERIENCIA = EXPERIENCIA;
 window.CONTACTO = CONTACTO;

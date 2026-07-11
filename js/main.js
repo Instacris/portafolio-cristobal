@@ -30,6 +30,21 @@
     }).join("") + "</div>";
   }
 
+  /* ---------- Render: herramientas (loadout de equipamiento) ---------- */
+  var toolsWrap = document.getElementById("tools-list");
+  if (toolsWrap && window.HERRAMIENTAS) {
+    toolsWrap.innerHTML = '<ul class="tools-list">' + window.HERRAMIENTAS.map(function (t) {
+      return '<li class="tool">' +
+        '<span class="tool-ico">' + t.icon + "</span>" +
+        '<span class="tool-body">' +
+          '<b class="tool-name scramble sc-multi obs" data-text="' + t.name + '">' + t.name + "</b>" +
+          '<span class="tool-desc">' + t.desc + "</span>" +
+        "</span>" +
+        '<span class="tool-tag">' + t.tag + "</span>" +
+      "</li>";
+    }).join("") + "</ul>";
+  }
+
   /* ---------- Render: Excel (ícono + lista de habilidades) ---------- */
   var excelWrap = document.getElementById("excel-list");
   if (excelWrap && window.EXCEL_SKILLS) {

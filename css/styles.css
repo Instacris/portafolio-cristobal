@@ -442,6 +442,33 @@ section { position: relative; z-index: 2; padding: clamp(70px, 11vh, 130px) 0; }
   text-transform: uppercase; color: var(--ghost); text-align: center;
 }
 
+/* ---------- Herramientas: loadout de equipamiento ---------- */
+.tools-list { display: flex; flex-direction: column; gap: 13px; }
+.tool {
+  display: flex; align-items: center; gap: 14px;
+  border: 1px solid var(--red-faint); padding: 10px 14px;
+  background: rgba(255, 0, 51, 0.03);
+  transition: border-color .25s, box-shadow .25s, transform .25s;
+}
+.tool:hover { border-color: var(--red); box-shadow: var(--glow-sm); transform: translateX(4px); }
+.tool-ico { flex: 0 0 auto; }
+.tool-ico svg { width: 28px; height: 28px; display: block; image-rendering: pixelated; }
+.tool-body { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.tool-name {
+  font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 1px;
+  text-transform: uppercase; color: var(--white); font-weight: 400;
+}
+.tool-desc { font-family: var(--font-term); font-size: 1.08rem; color: var(--ghost); line-height: 1.25; }
+.tool-tag {
+  margin-left: auto; flex: 0 0 auto;
+  font-family: var(--font-pixel); font-size: 0.48rem; letter-spacing: 1px;
+  color: var(--red); border: 1px solid var(--red-faint); padding: 4px 8px;
+}
+
+/* Panel a lo ancho (Excel bajo lenguajes + herramientas) */
+.panel-wide { grid-column: 1 / -1; }
+.panel-wide .excel-skills { display: grid; grid-template-columns: 1fr 1fr; gap: 13px 40px; }
+
 /* ---------- Excel: ícono + checklist de habilidades ---------- */
 .excel-icon { text-align: center; margin-bottom: 20px; }
 .excel-icon img { width: 64px; height: 64px; object-fit: contain; filter: drop-shadow(0 0 8px rgba(33,163,102,0.45)); }
