@@ -96,6 +96,13 @@ const CONTACTO = {
    link: URL real del proyecto (se abre en otra pestaña). --- */
 const PROYECTOS = [
   {
+    name: "Brasa Burger · Hamburguesería",
+    desc: "Sitio para una hamburguesería artesanal: portada con hamburguesas animadas que rotan cada 3 segundos, carta digital ilustrada con assets propios (burgers, malteadas, cafés), reserva de mesa y pedidos a domicilio por WhatsApp.",
+    img: "img/BrasaBurger.png",
+    link: "https://brasa-burger-alpha.vercel.app",
+    tags: ["HTML", "CSS", "JavaScript", "SVG"],
+  },
+  {
     name: "Overdrive · Tienda de Cosplay",
     desc: "Tienda temática (asesino de Scream) con DOS perfiles: vista de cliente (catálogo con ofertas y stock en tiempo real, selección de productos y contacto por WhatsApp) y panel administrativo para gestionar productos, precios, ofertas, stock y mensajes. Con base de datos real en la nube.",
     img: "img/overdrive.png",
