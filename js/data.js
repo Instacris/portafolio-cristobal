@@ -98,7 +98,7 @@ const PROYECTOS = [
   {
     name: "Brasa Burger · Hamburguesería",
     desc: "Sitio para una hamburguesería artesanal: portada con hamburguesas animadas que rotan cada 3 segundos, carta digital ilustrada con assets propios (burgers, malteadas, cafés), reserva de mesa y pedidos a domicilio por WhatsApp.",
-    img: "img/BrasaBurger.png",
+    img: "img/BrasaBurger.jpg",
     link: "https://brasa-burger-alpha.vercel.app",
     tags: ["HTML", "CSS", "JavaScript", "SVG"],
   },
