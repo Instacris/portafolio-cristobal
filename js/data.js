@@ -104,9 +104,9 @@ const PROYECTOS = [
   },
   {
     name: "Overdrive · Tienda de Cosplay",
-    desc: "Tienda temática (asesino de Scream) con DOS perfiles: vista de cliente (catálogo con ofertas y stock en tiempo real, selección de productos y contacto por WhatsApp) y panel administrativo para gestionar productos, precios, ofertas, stock y mensajes. Con base de datos real en la nube.",
+    desc: "Tienda temática (asesino de Scream) con DOS perfiles: vista de cliente (catálogo con ofertas y stock en tiempo real, selección de productos y contacto por WhatsApp) y panel administrativo para gestionar productos, precios, ofertas, stock y mensajes. Con base de datos real en la nube. Proyecto en producción, en uso por el cliente.",
     img: "img/overdrive.png",
-    link: "https://overdrive-woad.vercel.app/demo",
+    link: "https://overdrive-woad.vercel.app",
     tags: ["JavaScript", "API Serverless", "Redis", "Admin"],
   },
   {
